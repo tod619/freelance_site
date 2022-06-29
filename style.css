@@ -24,6 +24,25 @@ body {
   font-family: var(--mainFont);
 }
 
+.button {
+  background-color: var(--secondary);
+  padding: 0.5rem 3rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /* Start: Navigation */
 nav {
   max-width: 1200px;
@@ -79,5 +98,10 @@ nav a {
   color: var(--white);
   z-index: 10;
   text-align: center;
+}
+
+.hero-content i {
+  font-size: 3rem;
+  color: var(--primary);
 }
 /* End: Hero Section */
