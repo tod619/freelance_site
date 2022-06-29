@@ -12,6 +12,7 @@
 
 html {
   box-sizing: border-box;
+  min-height: 100%;
 }
 
 *,
@@ -22,6 +23,23 @@ html {
 
 body {
   font-family: var(--mainFont);
+  min-height: 100%;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h3 {
+  color: var(--secondary);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 2;
 }
 
 .button {
@@ -118,3 +136,18 @@ nav a {
   color: var(--primary);
 }
 /* End: Hero Section */
+
+/* Start: Services Container */
+
+@media screen and (min-width: 776px) {
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .service {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+}
+
+/* End  Services Container */
