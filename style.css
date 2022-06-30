@@ -59,6 +59,16 @@ p {
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(1, 123, 136);
 }
 
 .container {
@@ -175,3 +185,64 @@ nav a {
 }
 
 /* End  Services Container */
+
+/* Start: Contact Section */
+form {
+  background-color: var(--gray);
+  padding: 2rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 776px) {
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .field {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+.field {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.field label {
+  flex: 0 0 90px;
+  color: var(--white);
+}
+
+.field input[type="text"],
+.field input[type="tel"],
+.field input[type="email"],
+.field textarea {
+  flex: 1;
+  height: 2.4rem;
+}
+
+.w-100 {
+  flex: 0 0 100%;
+}
+
+.field textarea {
+  height: 4rem;
+}
+
+.submit-form {
+  display: flex;
+  justify-content: flex-end;
+}
+/* End: Contact Section */
